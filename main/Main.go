@@ -91,9 +91,8 @@ func loginMatrix() {
 		panic(err)
 	}
 	_, err = client.Login(&mautrix.ReqLogin{
-		Type:             "m.login.password",
-		Identifier:       mautrix.UserIdentifier{Type: mautrix.IdentifierTypeUser, User: viper.GetString("matrixuserid")},
-		Password:         viper.GetString("matrixuserpassword"),
+		Type:             "m.login.token",
+		Token:            viper.GetString("matrixusertoken"),
 		StoreCredentials: true,
 	})
 	if err != nil {

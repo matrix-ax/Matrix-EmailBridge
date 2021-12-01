@@ -3,7 +3,6 @@ module github.com/JojiiOfficial/Matrix-EmailBridge
 go 1.15
 
 require (
-	github.com/PuerkitoBio/goquery v1.5.1 // indirect
 	github.com/emersion/go-imap v1.0.6
 	github.com/emersion/go-message v0.14.1
 	github.com/emersion/go-sasl v0.0.0-20200509203442-7bfe0ed36a21 // indirect
