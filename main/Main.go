@@ -92,6 +92,7 @@ func loginMatrix() {
 	}
 	_, err = client.Login(&mautrix.ReqLogin{
 		Type:             "m.login.token",
+		Identifier:       mautrix.UserIdentifier{Type: mautrix.IdentifierTypeUser, User: viper.GetString("matrixuserid")},
 		Token:            viper.GetString("matrixusertoken"),
 		StoreCredentials: true,
 	})
