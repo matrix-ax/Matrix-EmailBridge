@@ -17,7 +17,7 @@ jobs:
       - name: Prepare
         id: prep
         run: |
-          DOCKER_IMAGE=${{ github.repository_owner }}/Matrix-EmailBrdige
+          DOCKER_IMAGE=${{ github.repository_owner }}/matrix-emailbridge
           # Set the platforms to build for here and thus reduce duplicating it.
           PLATFORMS=amd64,arm64
           TAGS="ghcr.io/${DOCKER_IMAGE}:latest"
